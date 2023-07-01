@@ -1,0 +1,145 @@
+.article {}
+
+.article__big-post {}
+
+.article__related {
+    background-color: rgba(229, 229, 229, 0.30);
+}
+
+/* --------------------- */
+
+.article__content {
+    padding: 6.25rem 0px;
+}
+
+.article__container {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 12.5rem 1fr 12.5rem;
+    gap: 1.25rem;
+}
+
+.article__info {
+    display: flex;
+    gap: 0.4375rem;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 208.333333%;
+    /* 25/12 */
+    color: #495057;
+    font-weight: 700;
+}
+
+.article__date {
+    display: flex;
+    gap: 0.4375rem;
+    align-items: center;
+}
+
+.article__date::after {
+    content: '';
+    height: 0.0625rem;
+    width: 2.1875rem;
+    background-color: #c4c4c4;
+}
+
+.article__time {}
+
+.article__body {
+    display: grid;
+    gap: 3.125rem;
+}
+
+.article__text {
+    display: grid;
+    gap: 1.875rem;
+    line-height: 178.571429%;
+    /* 25/14 */
+}
+
+.article__text blockquote {
+    color: #D4A373;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 127.777778%;
+    /* 46/36 */
+}
+
+.article__tags {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    border-bottom: 0.0313rem solid #C4C4C4;
+    padding-bottom: 3.125rem;
+}
+
+.article__tag {
+    color: #6C757D;
+    border: 0.0625rem solid #E5E5E5;
+}
+
+.article__tag:hover {
+    background-color: #E5E5E5;
+}
+
+.article__author {}
+
+.author {
+    display: flex;
+    gap: 1.0625rem;
+}
+
+.author__avatar {
+    flex: 0 0 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author__body {
+    display: grid;
+    gap: 0.5rem;
+    align-self: center;
+    font-size: 0.75rem;
+}
+
+.author__title {
+    color: #343a40;
+    font-weight: 700;
+}
+
+.author__skills {
+    color: #6C757D;
+}
+
+@media (max-width: 991.98px) {
+    .article__content {
+        padding: 4.375rem 0px;
+    }
+
+    .article__container {
+        grid-template-columns: 12.5rem 1fr;
+    }
+
+    .article__body {
+        gap: 1.875rem;
+    }
+    .article__tags{
+        padding-bottom: 1.875rem;
+    }
+    .article__text{
+        gap: 0.9375rem;
+    }
+    .article__text blockquote {
+        font-size: 1.5625rem;
+    }
+}
+
+@media (max-width: 767.98px){
+    .article__content {
+        padding: 2.5rem 0px;
+    }
+    .article__container {
+        grid-template-columns: auto;
+    }
+}

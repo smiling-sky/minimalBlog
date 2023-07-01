@@ -1,0 +1,26 @@
+.footer {
+    background: #343A40;
+padding: 1.875rem 0px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    justify-content: space-between;
+    line-height: 128.571429%; /* 18/14 */
+}
+
+.footer__text {
+    text-transform: uppercase;
+    color: #E5E5E5;
+    font-weight: 700;
+}
+
+.footer__up {
+    color: #E5E5E5;
+}
+
+.footer__up:hover{
+    text-decoration: underline; 
+}

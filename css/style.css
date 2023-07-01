@@ -1,0 +1,54 @@
+/* ---- reset ------ */
+@import url(reset.css);
+
+/* ---- header ------ */
+@import url(header.css);
+
+/* ---- footer ------ */
+@import url(footer.css);
+
+/* ---- common ------ */
+@import url(common.css);
+
+/* ---- homepage ------ */
+@import url(homepage.css);
+
+/* ---- articlepage ------ */
+@import url(articlepage.css);
+
+/* ------------------------------ */
+body {
+    color: #495057;
+    font-size: 0.875rem;
+    font-family: 'Lora', serif;
+    background: #f8f9fa;
+}
+
+[class*="__container"] {
+    max-width: 1330px;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+/* ------------------------------ */
+
+/* ------------------------------ */
+
+/* ------------------------------ */
+
+/* ------------------------------ */
+
+/* ------------------------------ */
